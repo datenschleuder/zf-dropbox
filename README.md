@@ -18,7 +18,7 @@ Examples
 ========
 
 return account info:
-
+<pre><code>
 $httpclient = new Zend_Http_Client();
 $endpoint = new ZendX_Dropbox_Endpoints_AccountInfo();
 
@@ -27,12 +27,13 @@ $dropbox->setAccessToken(YOUR ACCESSTOKEN)
 		->setEndpoint($endpoint)
 		->setHttpClient($httpclient)
 		->connect();
-		
+</code></pre>		
 		
 		
 
 upload a JPEG in your dropbox:
 
+<pre><code>
 $httpclient = new Zend_Http_Client();
 $endpoint = new ZendX_Dropbox_Endpoints_FilesPut();
 $endpoint->setPath('cloud/audi.jpg')
@@ -44,3 +45,4 @@ $dropbox->setAccessToken(YOUR ACCESSTOKEN)
 		->setHttpClient($httpclient)
 		->setRequestBody(file_get_contents("/home/juergen/Bilder/Foto3.JPG"))
 		->connect();
+</code></pre>
