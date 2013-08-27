@@ -1,7 +1,7 @@
 zf-dropbox
 ==========
 
-ZF-Dropbox - A simple Dropbox Client for Zendframework 1
+ZF-Dropbox - A simple Dropbox Client for Zendframework 1, OAuth2 used for authentication and requires no Curl.
 
 
 
